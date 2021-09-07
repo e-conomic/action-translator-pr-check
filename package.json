@@ -1,0 +1,32 @@
+{
+  "name": "translator-action",
+  "version": "1.0.0",
+  "description": "A GitHub Action that checks mergeability of locale file changesets",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf",
+    "clean:package": "npm run clean -- dist",
+    "package:single": "ncc build --out dist --minify",
+    "package": "npm run clean:package && npm run package:single"
+  },
+  "dependencies": {
+    "@actions/core": "^1.5.0",
+    "@actions/github": "^5.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.30.0",
+    "rimraf": "^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e-conomic/translator-action.git"
+  },
+  "keywords": [],
+  "author": "Visma e-conomic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/e-conomic/translator-action/issues"
+  },
+  "homepage": "https://github.com/e-conomic/translator-action#readme"
+}

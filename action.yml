@@ -1,0 +1,14 @@
+name: Check PR for changeset in locale files
+description: Check whether locale files contain changes and block PR if missing values exist
+inputs:
+  github-token:
+    description: Github Token for Octokit
+    required: true
+  locale-path:
+    description: 'Path of locale files, in the format "public/locales/"'
+    required: true
+    default: public/locales/
+
+runs:
+  using: node12
+  main: dist/index.js
