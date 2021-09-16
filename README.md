@@ -33,3 +33,7 @@ jobs:
 | ------------ | -------- | -------------- | ------------------------------------- |
 | github-token | yes      |                | Use ${{ secrets.GITHUB_TOKEN}} or PAT |
 | locale-path  | yes      | public/locales | Path of locale files                  |
+
+# Updates to the Action script
+
+After updating the `lib/index.js` script, one must run `npm run package` before pushing changes to source control.
