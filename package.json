@@ -1,5 +1,5 @@
 {
-  "name": "translator-action",
+  "name": "action-translator-pr-check",
   "version": "1.0.0",
   "description": "A GitHub Action that checks mergeability of locale file changesets",
   "main": "lib/index.js",
@@ -20,13 +20,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/e-conomic/translator-action.git"
+    "url": "git+https://github.com/e-conomic/action-translator-pr-check.git"
   },
   "keywords": [],
   "author": "Visma e-conomic",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/e-conomic/translator-action/issues"
+    "url": "https://github.com/e-conomic/action-translator-pr-check/issues"
   },
-  "homepage": "https://github.com/e-conomic/translator-action#readme"
+  "homepage": "https://github.com/e-conomic/action-translator-pr-check#readme"
 }
