@@ -13,12 +13,12 @@ You can manage translations of your PRs via the [Translator UI](https://translat
 Below is a sample workflow that uses the Translator Action.
 
 ```yml
-name: Check PR for changeset in locale files
+name: Translator Service
 
 on: [pull_request]
 
 jobs:
-  check_changeset_job:
+  check_changeset:
     runs-on: ubuntu-latest
     steps:
       - uses: e-conomic/action-translator-pr-check@v1
