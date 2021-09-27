@@ -21,7 +21,7 @@ jobs:
   check_changeset:
     runs-on: ubuntu-latest
     steps:
-      - uses: e-conomic/action-translator-pr-check@v1
+      - uses: e-conomic/action-translator-pr-check@v2.0.3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           locale-path: public/locales/
